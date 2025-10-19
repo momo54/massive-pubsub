@@ -1,0 +1,5 @@
+cron:
+  - description: "Drain Pub/Sub likes"
+    url: /tasks/drain
+    schedule: every 1 minutes
+    target: worker

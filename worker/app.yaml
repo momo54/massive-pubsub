@@ -1,0 +1,6 @@
+runtime: python311
+entrypoint: gunicorn -b :$PORT worker:app
+service: worker
+
+env_variables:
+  PUBSUB_SUBSCRIPTION: post-likes-sub

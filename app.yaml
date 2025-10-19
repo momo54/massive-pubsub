@@ -1,0 +1,5 @@
+runtime: python311
+entrypoint: gunicorn -b :$PORT main:app
+
+env_variables:
+  PUBSUB_TOPIC: post-likes
